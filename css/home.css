@@ -1,0 +1,21 @@
+#home-hero {
+	background-image: url('../assets/taniti-bg.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+#sources {
+	background-color: var(--gray);
+	margin: 0;
+}
+
+.img-fig {
+	width: 100%;
+	height: auto;
+	margin-left: 40px;
+}
+
+.article-img {
+	width: 250px;
+	height: auto;
+}
