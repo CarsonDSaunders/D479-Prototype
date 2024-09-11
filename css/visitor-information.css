@@ -1,0 +1,24 @@
+#home-hero {
+	background-image: url('../assets/visitor-information.jpg');
+	background-size: cover;
+	background-position: 25% 20%;
+}
+
+.img-fig {
+	width: 100%;
+	height: auto;
+	margin-left: 40px;
+}
+
+.article-img {
+	width: 250px;
+	height: auto;
+}
+
+article {
+	font-size: 1.2em;
+}
+
+.page-content p {
+	margin-bottom: 20px;
+}

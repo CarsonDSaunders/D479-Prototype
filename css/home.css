@@ -19,3 +19,7 @@
 	width: 250px;
 	height: auto;
 }
+
+.page-content p {
+	margin-bottom: 20px;
+}

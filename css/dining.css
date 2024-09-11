@@ -1,5 +1,5 @@
 #home-hero {
-	background-image: url('../assets/lodging-bg.jpg');
+	background-image: url('../assets/dining-bg.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -16,5 +16,9 @@
 }
 
 article {
-	font-size: 1.5em;
+	font-size: 1.2em;
+}
+
+.page-content p {
+	margin-bottom: 20px;
 }

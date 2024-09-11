@@ -197,7 +197,25 @@ article {
 	min-width: 300px;
 }
 
+h3 {
+	font-size: 20px;
+}
+
 figcaption,
 .credit {
 	font-size: 0.8em;
+}
+
+@media (max-width: 800px) {
+	aside {
+		width: 100%;
+		margin: 20px 0;
+	}
+	section {
+		width: 100%;
+		padding: 20px;
+	}
+	.page-content {
+		flex-direction: column;
+	}
 }

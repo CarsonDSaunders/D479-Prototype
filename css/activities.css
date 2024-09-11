@@ -1,0 +1,24 @@
+#home-hero {
+	background-image: url('../assets/activities-bg.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.img-fig {
+	width: 100%;
+	height: auto;
+	margin-right: 40px;
+}
+
+.article-img {
+	width: 350px;
+	height: auto;
+}
+
+article {
+	font-size: 1.2em;
+}
+
+.page-content p {
+	margin-bottom: 20px;
+}
