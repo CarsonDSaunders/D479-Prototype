@@ -22,4 +22,12 @@
 
 .page-content p {
 	margin-bottom: 20px;
+	font-size: 1.2em;
+}
+
+@media (max-width: 900px) {
+	.img-fig {
+		width: auto;
+		margin: 0 auto;
+	}
 }

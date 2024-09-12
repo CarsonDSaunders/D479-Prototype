@@ -22,3 +22,10 @@ article {
 .page-content p {
 	margin-bottom: 20px;
 }
+
+@media (max-width: 900px) {
+	.img-fig {
+		width: auto;
+		margin: 0 auto;
+	}
+}

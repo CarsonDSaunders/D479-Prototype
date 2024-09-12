@@ -18,6 +18,7 @@
 
 html {
 	margin: 0;
+	width: 100vw;
 }
 
 * {
@@ -206,16 +207,96 @@ figcaption,
 	font-size: 0.8em;
 }
 
-@media (max-width: 800px) {
+.menu-icon {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.menu-icon div {
+	width: 30px;
+	height: 3px;
+	background-color: var(--green); /* Adjust color if needed */
+	margin: 5px 0;
+}
+
+#close-menu,
+.home-btn {
+	display: none;
+}
+
+/* Mobile styles for the nav menu */
+@media (max-width: 900px) {
+	h1 {
+		font-size: 1.5em;
+	}
+	header {
+		position: relative;
+		z-index: 10; /* This makes sure the header stays above the mobile menu */
+	}
+	.menu-icon,
+	.home-btn {
+		display: flex;
+	}
+
+	#close-menu {
+		display: flex;
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		z-index: 10;
+		background: none;
+		border: none;
+		cursor: pointer;
+		color: var(--green);
+		font-size: 2em;
+	}
+	.nav-links {
+		position: fixed; /* Fixes the menu to the screen */
+		bottom: 0; /* Makes sure the menu starts at the top */
+		right: 0; /* Aligns it to the right */
+		height: 100vh; /* Full viewport height for the menu */
+		width: 100vw; /* Ensures the menu takes up the full width of the screen */
+		background-color: var(--celadon);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transition: transform 0.3s ease-in-out;
+		transform: translateX(100%); /* Hides the menu initially by moving it off-screen */
+		z-index: 5;
+	}
+
+	.nav-links.active {
+		transform: translateX(0); /* Brings the menu into view when active */
+	}
+
+	nav ul li {
+		margin: 20px 0;
+	}
+
+	nav > ul > li > a {
+		color: var(--olive); /* Adjust color if needed */
+		text-decoration: none;
+		font-size: 1.5em;
+	}
+
+	nav > ul > li > a:hover {
+		color: var(--green);
+	}
+
 	aside {
-		width: 100%;
 		margin: 20px 0;
 	}
 	section {
-		width: 100%;
 		padding: 20px;
 	}
 	.page-content {
 		flex-direction: column;
+		padding: 20px;
+	}
+
+	.hero-text-bg {
+		min-width: fit-content;
 	}
 }

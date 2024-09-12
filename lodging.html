@@ -4,8 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Lodging - ExploreTaniti</title>
-		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/lodging.css" />
+		<link rel="stylesheet" href="/css/styles.css" />
+		<link rel="stylesheet" href="/css/lodging.css" />
 	</head>
 
 	<body>
@@ -17,22 +17,29 @@
 			</div>
 
 			<nav>
-				<ul>
+				<div class="menu-icon" id="menu-icon">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<ul class="nav-links" id="nav-links">
+					<li><button id="close-menu">X</button></li>
+					<li class="home-btn"><a href="index.html">Home</a></li>
 					<li><a class="nav-selected" href="lodging.html">Lodging</a></li>
 					<li><a href="dining.html">Dining</a></li>
 					<li><a href="activities.html">Activities</a></li>
-
-					<li><a href="visitor-information.html">Visitor Information</a></li>
+					<li><a href="visitor-info.html">Visitor Information</a></li>
 				</ul>
 			</nav>
 		</header>
+
+		<script src="script.js"></script>
 
 		<main>
 			<section class="hero" id="home-hero">
 				<div class="hero-text-bg">
 					<h2>Lodging</h2>
 				</div>
-				<div class="credit">(A body of water that has some houses on it, 2023)</div>
 			</section>
 
 			<section class="page-content">
@@ -74,13 +81,10 @@
 					</p>
 				</article>
 			</section>
-			<figure class="img-fig">
-				<img class="article-img" src="assets/taniti-water.jpg" alt="Taniti" />
-				<figcaption>(A body of water..., 2024)</figcaption>
-			</figure>
 		</main>
 		<footer id="page-footer">
 			<p>&copy; 2024 ExploreTaniti.com</p>
+			<p>All images sourced from Unsplash.com</p>
 		</footer>
 	</body>
 </html>
